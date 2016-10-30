@@ -1,0 +1,38 @@
+for the header routing/configuration:
+
+Create map where the key(String) is the routes from and
+the value is the route (including configuration), 
+the configuration is containing the to's (1 or more) 
+in forms of keys (which are other elements of the map). 
+
+The map has one starting variable that defines the key 
+of the route where everything starts, and there also 
+will be specific endpoints for status output and 
+result response. 
+
+Also for deadletters, they will be returned to the sender 
+via the status channel as error messages, with all the stack trace.
+
+The header route object consists of the endpoint information 
+and other necessary configuration info needed in order to run the route. 
+It should have a ideally a generic structure for all routes, 
+for specific aspects consider either a generic injection or a 
+simple meta map.
+
+
+Map<String, GenericWrapper> config
+
+public class GenericWrapper{
+	private Class<?> type;
+	private Object value;
+	
+	public GenericWrapper(Class<?> type, Object value){
+		if(!(value instanceof type)){
+			throw new Exception("dumbass!!");
+		} else {
+			this.type = type;
+			this.value = value;
+		}
+	}
+	//TODO generate getters
+}
