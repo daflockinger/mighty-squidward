@@ -12,3 +12,10 @@ project/boot
 target/
 /logs
 .history
+.sbtserver
+.settings
+.cache-main
+.cache-tests
+.classpath
+.project
+/bin/

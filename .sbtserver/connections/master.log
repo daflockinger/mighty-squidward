@@ -1,7 +1,0 @@
-New log file opened at Sat Oct 29 18:28:48 CEST 2016 by 13091@tpflo
-Taking next connection to: 35519
-New client attempting to connect on port: 56182-35519
-  Address = /192.168.0.15:35519
-This client on port 56182 has uuid 05881df5-a058-4827-a4a7-fd64a9918656 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-05881df5-a058-4827-a4a7-fd64a9918656
-Taking next connection to: 35519
