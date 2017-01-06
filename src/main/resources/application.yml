@@ -3,3 +3,6 @@ camel:
     name: SampleCamel
     allow-use-original-message: false
     shutdown-timeout: 15
+    
+squidward:
+  deadletter.endpoint: file:/tmp/deadletters

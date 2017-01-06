@@ -1,15 +1,9 @@
 package com.flockinger.squidward.route;
 
-import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MainRouter extends RouteBuilder {
-
-
-	//public static String DIRECT_MAIN_ROUTER = "direct:main-router";
-
-	// from(DIRECT_MAIN_ROUTER)
+public class MainRouter extends BaseRouteBuilder {
 
 	@Override
 	public void configure() {
