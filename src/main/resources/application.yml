@@ -1,0 +1,5 @@
+camel:
+  springboot:
+    name: SampleCamel
+    allow-use-original-message: false
+    shutdown-timeout: 15
